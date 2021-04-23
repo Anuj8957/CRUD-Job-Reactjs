@@ -11,14 +11,14 @@ const Home = () => {
 
     const loadUsers = async () => {
         const result = await axios.get('http://localhost:3003/users');
-        setUser(result.data);
+        setUser(result.data.reverse());
     }
 
     return (
         <div className="container">
             <div className="py-4">
-                <table class="table  border shadow">
-                    <thead class="table-dark">
+                <table className="table  border shadow">
+                    <thead className="table-dark">
                         <tr>
                             <th scope="col">Sno.</th>
                             <th scope="col">Name</th>
@@ -32,12 +32,12 @@ const Home = () => {
                             user.map((user,index) =>(
                                 <tr>
                                     <th scope="row">{index + 1}</th>
-                                    <td>{user.name}</td>
+                                    <td>{user.names}</td>
                                     <td>{user.username}</td>
                                     <td>{user.email}</td>
                                     <td>
                                         <Link className="btn btn-sm btn-primary mx-2">View</Link>
-                                        <Link className="btn btn-sm btn-outline-primary mx-2">Edit</Link>
+                                        <Link className="btn btn-sm btn-outline-primary mx-2" to={`/users/edit/${user.id}`}>Edit</Link>
                                         <Link className="btn btn-sm btn-danger mx-2">Delete</Link>
                                     </td>
                                 </tr>
