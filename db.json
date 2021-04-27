@@ -1,12 +1,20 @@
 {
   "users": [
     {
-      "names": "ANUJ JAISWAL",
+      "names": "ANUJ JAISWALaaaa",
       "email": "anujjaiswalcse0020@gmail.com",
-      "username": "anuj180594",
-      "phone": "+918851892549",
-      "website": "www.abc.com",
-      "id": 1
+      "username": "aaa",
+      "phone": "8957895790",
+      "website": "222",
+      "id": 3
+    },
+    {
+      "names": "Anuj Jaiswal",
+      "email": "anuj18.jaiswal@gmail.com",
+      "username": "",
+      "phone": "+11111111111",
+      "website": "",
+      "id": 4
     }
   ]
 }

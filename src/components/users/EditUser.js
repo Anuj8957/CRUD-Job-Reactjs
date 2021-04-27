@@ -53,7 +53,7 @@ const EditUser = () => {
                     <label className="form-label">Website</label>
                     <input type="text" className="form-control" name="website" value={website} onChange={e => onInputChange(e)}/>
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary">Update</button>
             </form>
             </div>
         </div>
